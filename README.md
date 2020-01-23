@@ -1,2 +1,4 @@
-# gerador-de-token
-Gerador de token desenvolvido em PHP para uso no estágio do Depart. de Gestão de Tecnologia da Informação (DGTI) do IFPE. 
+# Gerador de token <img src="img/mysql.png" width="80" height="40" align="right">
+
+
+Gerador de token PHP desenvolvido para atender a necessidade de algumas aplicações desenvolvidas no Depart. de Gestão de Tecnologia da Informação (DGTI) do IFPE campus REcife.
