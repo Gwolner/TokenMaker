@@ -1,17 +1,17 @@
 <?php
 
 $token = NULL; //Token indefinido
-$digitosToken = 8; //Define quantos digitos o token possui
+$digitos = 8; //Define quantos digitos o token possui
 
-for($i=0;$i < $digitosToken;$i++){
+for($i=0;$i < $digitos;$i++){
 
-    $flag = rand(0,8); // Define a sensibilidade de alternar LETRA e NUMERO
+    $sensibilidade = rand(0,8); // Define a sensibilidade de alternar LETRA e NUMERO
     
-    if($flag < 3){
-        $token .= chr(rand(65,90)); // Sorteia Letras maiusculas
+    if($sensibilidade < 3){
+        $token .= chr(rand(65,90)); // Sorteia letras maiusculas
     }
-    else if($flag >= 6){
-        $token .= chr(rand(97,122)); // Sorteia Letras minusculas
+    else if($sensibilidade >= 6){
+        $token .= chr(rand(97,122)); // Sorteia letras minusculas
     }
     else {
         $token .= rand(0,9); // Sorteia numeros de um único dígito
