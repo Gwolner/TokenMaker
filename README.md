@@ -12,12 +12,12 @@ Também permite expansão para incluir caracteres especiais no token gerado.
 
 Define a quantidade de dígitos que o token deve possuir.
 ```
-$digitosToken = 8; 
+$digitos = 8; 
 ```
 
 É possível gerar uma quantidade aleatória (Entre 6 e 8 dígitos, por exemplo).
 ```
-$digitosToken = rand(6,8);
+$digitos = rand(6,8);
 ```
 
 Define a sensibilidade de alternar entre letras maiúscula, minúscula e números.
