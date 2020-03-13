@@ -10,12 +10,14 @@ for($i=0;$i < $digitos;$i++){
     if($sensibilidade < 3){
         $token .= chr(rand(65,90)); // Sorteia letras maiusculas
     }
-    else if($sensibilidade >= 6){
+    else if($sensibilidade >= 3 && $sensibilidade <= 5){
         $token .= chr(rand(97,122)); // Sorteia letras minusculas
     }
-    else {
+    else if($sensibilidade >= 6){
         $token .= rand(0,9); // Sorteia numeros de um único dígito
-    }
+    } else {
+		$token = "Erro: Verifique a faixa de sensibilidade";
+	}
 }
 
 echo $token."<br/>"; // Exibe o token
