@@ -8,7 +8,7 @@ Diferente de outros geradores mais simples, o Token Maker permite definir quanto
 
 Apresenta flexibilidade de modificações no código, de modo a permitir gerar token com caracteres especiais. Além disso, conta com uma flag que é acionada quando é encontrada alguma inconsistência nas definições de caracteres.
 
-## O código
+## Variáveis e parâmetros
 
 Define a quantidade de dígitos que o token deve possuir.
 ```php
@@ -30,12 +30,6 @@ Flag de controle de erro. Caso apareça alguma inconsistência, muda de <b>false
 ```php
 $flagError = false;
 ```
-
-## Mensagem de erro
-
-Durante a criação de qualquer dígito do token, se ele não satisfizer nenhuma condição presente nos IFs, ele irá entrar no ELSE. Desta forma, independente de quantos dígitos ja tenham sido criados para o token, ele será substituido por uma mensagem e irá acionar a flag de erro. 
-
-Com a flag acionada nenhum novo dígito que possa vir a pertencer ao token será gerado. Isto evita que qualquer dígito seguinte seja concatenado com o final da mensagem de erro.
 
 ## Funcionamento
 
@@ -65,12 +59,19 @@ Para cada dígito do token é sorteado um valor (no snippet abaixo, de 0 a 8) co
     }
 ```
 
+## Mensagem de erro
+
+Durante a criação de qualquer dígito do token, se ele não satisfizer nenhuma condição presente nos IFs, ele irá entrar no ELSE. Desta forma, independente de quantos dígitos ja tenham sido criados para o token, ele será substituido por uma mensagem e irá acionar a flag de erro. 
+
+Com a flag acionada nenhum novo dígito que possa vir a pertencer ao token será gerado. Isto evita que qualquer dígito seguinte seja concatenado com o final da mensagem de erro.
+
 ## Visualizando token 
 
 Visualizar token gerado ou a mensagem de erro
 ```php
 echo $token; 
-
+```
+```
 //Saída do token
 4FmwXD5q
 
@@ -81,7 +82,8 @@ Erro: Verifique a faixa de sensibilidade
 Conferindo tamanho do token ou da mensagem.
 ```php
 echo strlen($token);
-
+```
+```
 //Saída do token
 8
 
