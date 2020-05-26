@@ -1,6 +1,6 @@
 # Token Maker <img src="logo/php.png" width="70" height="40" align="right">
 
-Gerador de token PHP para atender as necessidades de algumas aplicações desenvolvidas no Depart. de Gestão de Tecnologia da Informação (DGTI) do IFPE campus Recife. 
+> Gerador de token PHP para atender as necessidades de algumas aplicações desenvolvidas no Depart. de Gestão de Tecnologia da Informação (DGTI) do IFPE campus Recife. 
 
 ## Características
 
